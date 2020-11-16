@@ -24,4 +24,19 @@
 <p><strong>INTRODUCTION</strong></p>
 <p>The Internet has penetrated every corner of our lives. We couldn’t even imagine its ubiquitousness even ten years ago, but now, it’s everywhere. From our cell phones to our cars, the internet has a grip on all of modern life’s offerings. Our content consumption has largely shifted to the internet. We previously used computers alone to access it, but now there’s a host of devices, such as phones and TVs. We can now connect our Television to the internet and experience all kinds of services that were once unthinkable.</p>
 <p>The current technology through which broadcasting happens in Television is archaic, especially if we consider how fast people across different generations are abandoning their ancient TVs and opting for Smart TVs. The scope that these smart TVs offer are underutilized. The current technology is simply not built for it. One way to combat this problem will be to install IPTV. It is essentially connecting these smart TVs to the internet. But rather than using a select few features that comes with the TV, this particular technology will be used in broadcasting. There won’t be any extra hassle, as the existing internet of the household will be plugged in. This service also won’t be limited to just TV, any device that has internet--smartphones, computers can access it. The concept of Television won’t just be restricted to the rectangular device, but rather, it’ll be transformed into a platform.</p>
-
+<p><strong>FEATURES</strong></p>
+<ul>
+<li>Easy signup process using email address or phone number.<li>
+<li>High quality Live TV streaming compared to conventional TV service<li>
+<li>Computer and smartphone supported<li>
+<li>Existing smart TV can be used for streaming IPTV<li>
+<li>Easy online payment system though payment gateway<li>
+<li>Customizable profile – User can update their profile photo, basic information and contact information<li>
+<li>2 step SMS verification for age restriction<li>
+<li>Channels can be searched by name, genre, country etc.<li>
+<li>Favorite channel list can be created<li>
+<li>Channel Auto suggestion based on top views<li>
+<li>Admin Panel – the admins will have full control over the whole system adding/updating channels, user information and other related information<li>
+<li>M3U Playlist for Smart TVs to stream IPTV<li>
+<li>Dockerized easy installation/deployment process<li>
+</ul>
