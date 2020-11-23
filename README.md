@@ -54,6 +54,7 @@
 <p><em>Additional technologies</em></p>
 <p>Allauth for Django will be used to allow users to login using their Facebook and/or Google account. To keep up with the modern forms of technology we would be using additional technologies to ensure complete user satisfaction.</p>
 <p>We will also dockerize the project for easy deployment.</p>
+<p>&nbsp;</p>
 <p><strong>Monetization</strong></p>
 <p>There will be two types of users for this platform. One of them will be ISP or Cable TV operators, who will buy our software as a package.</p>
 <p>Another type of user can be our own users and we will host it be our self in our local servers. Users will buy our service from us and use our service from online portal. They will sign up and pay through online payment methods supported by our payment gateway.</p>
