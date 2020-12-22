@@ -12,18 +12,19 @@
     
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
+    {% block player_scripts %}
+    {% endblock player_scripts %}
+
     <title>Online IPTV</title>
 </head>
 <body>
     
     {% include 'navbar.html' %}
 
-    <div class="container">
-        {% block content %}
     
-        
-        {% endblock content %}
-    </div>
+    {% block content %}   
+    {% endblock content %}
+    
     
     {% include 'footer.html' %}
 </body>
