@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+}
+h1{
+    color: yellow;
+}
+
+.firstDiv{
+    color: violet;
+}
+
+.secondDiv{
+    color: teal;
+}
+
+#singledout{
+    color: greenyellow;
+    text-decoration: line-through ;
+}
+
+/* *{ 
+    color: blueviolet;
+}*/
+
+h1 + ul{
+    border: 5px dotted orange;
+}
+
+li{
+    color: darkorchid;
+}
+
+li a{
+    color: aqua;
+}
+
+li a[href="www.youtube.com"]{
+    color: aquamarine;
+    border: 5px dotted darkcyan;
+}
