@@ -13,7 +13,7 @@ class Customer(models.Model):
         return self.name
 
 
-class Channels(models.Model):
+class Channel(models.Model):
     name = models.CharField(max_length=200, null=True)
     link = models.CharField(max_length=200, null=True)
     country = models.CharField(max_length=200, null=True)
