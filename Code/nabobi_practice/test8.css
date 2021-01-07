@@ -16,3 +16,20 @@ body{
 #abcd{ 
     font-size: 1.5em;
 }
+
+#top{
+    font-size: 1.0em;
+    border: 4px solid green;
+    width: 25%;
+    text-align: center;
+    margin: auto;
+     
+}
+
+#bottom{
+    font-size: 1.0em;
+    border: 4px solid red;
+    width: 25%;
+    text-align: center;
+    padding: 100px;
+}
