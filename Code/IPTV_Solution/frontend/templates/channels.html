@@ -1,0 +1,35 @@
+{% load static %}
+<div class="container">
+    <div class="row m-3">
+        <div class="col-12">
+            <div id="tv-links" class="text-center">
+
+                <!-- button added -->
+                <button type="button" class="btn tv-buttons btn-outline-light" onclick="player.src(select1hd); player.play();"
+                    data-toggle="tooltip" data-placement="bottom" title="Channel 1">
+                    <a><img src="{% static 'images/live-sport.png' %}" height='50px' width='99px' /></a></button>
+    
+    
+                <button type="button" class="btn tv-buttons btn-outline-light" onclick="player.src(sony); player.play();"
+                    data-toggle="tooltip" data-placement="bottom" title="Channel 2">
+                    <a><img src="{% static 'images/live-sport.png' %}" height='50px' width='99px' /></a></button>
+    
+    
+                <button type="button" class="btn tv-buttons btn-outline-light" onclick=""
+                    data-toggle="tooltip" data-placement="bottom" title="Channel 3">
+                    <a><img src="{% static 'images/live-sport.png' %}" height='50px' width='99px' /></a></button>
+    
+    
+                <button type="button" class="btn tv-buttons btn-outline-light" onclick=""
+                    data-toggle="tooltip" data-placement="bottom" title="Channel 4">
+                    <a><img src="{% static 'images/live-sport.png' %}" height='50px' width='99px' /></a></button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var sony = 'http://192.168.25.2:8085/hls/sonyten2.m3u8';
+    var select1hd = {src: 'http://192.168.25.2:8085/hls/hdmi3.m3u8', type: 'application/x-mpegURL'};
+</script>
