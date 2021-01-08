@@ -32,4 +32,41 @@ body{
     width: 25%;
     text-align: center;
     padding: 100px;
+    margin: auto;
+}
+
+h3{
+    text-align: center;
+    font-family: 'East Sea Dokdo', cursive;
+    font-style: italic;
+}
+
+.art{
+    margin: auto;
+}
+
+td{
+    height: 300px;
+    width: 150px;
+    border: 6px solid white;
+}
+
+#one{
+    background-color: chartreuse;
+}
+
+#two{
+    background-color: yellow;
+}
+
+#three{
+    background-color: violet;
+}
+
+#four{
+    background-color: turquoise;
+}
+
+#five{
+    background-color: teal;   
 }
