@@ -12,5 +12,5 @@ def iptv(request):
     context = {'channels': channels}
 
     # rendering the site
-    return render(request, 'iptv.html', channels)
+    return render(request, 'iptv.html', context)
     
