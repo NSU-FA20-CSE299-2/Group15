@@ -29,7 +29,11 @@
 {% include 'channels.html' %}
 
 <script>
-    var player = videojs('iptv_player');    
+    var player = videojs('iptv_player');
+    function playchannel(clink) {
+        player.src(clink);
+        player.play();
+    }
 </script>
 
 {% endblock content %}
