@@ -1,17 +1,27 @@
 {% extends 'main.html' %}
+{% load static %}
 
 {% block content %}
 
-<h1 class="text-center">homepage</h1>
-
-<div class="container">
-    <div class="row">
-        <h1 class="display-4 text-center">This is a demo home site</h1>
-        
-        <a class="text-center" href="/iptv"><h4>
-            Play Online TV
-        </h4></a>
+<header>
+    <!-- Background image -->
+    <div id="intro" class="p-5 text-center bg-image"
+        style="background-image: url('{% static 'images/background-jumbo.jpg' %}')">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white">
+                    <h1 class="mb-3">Watch Live TV and Movies</h1>
+                    <h5 class="mb-4">Best Online TV and Movie streaming site</h5>
+                    <a class="btn btn-outline-light btn-lg m-2" href="/iptv"
+                        role="button" rel="nofollow">Watch Live TV</a>
+                    <a class="btn btn-outline-light btn-lg m-2" href="#"
+                        target="_blank" role="button">Download Movies</a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+    <!-- Background image -->
+</header>
+
 
 {% endblock content %}
