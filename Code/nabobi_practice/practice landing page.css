@@ -1,4 +1,15 @@
 body{
     font-family: 'Dosis', sans-serif;
+    background-color: #000000;
+    color: #62c92a;
+    text-align: center;
+    border: 40px solid #c42eb0;
+    border-top: 5px;
+    margin: 0px;
 }
 
+p{
+    padding-top: 10% ;
+    padding-left: 30%;
+    padding-right: 30%;
+}
