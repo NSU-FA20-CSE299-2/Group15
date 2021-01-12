@@ -1,3 +1,15 @@
-body{
-    background-color: lightgrey;
+body {
+    background-color: lightgray;
+}
+
+.tv-buttons {
+    width: 9rem;
+    height: 4rem;
+    margin: 0.3rem;
+    
+}
+
+/* Default height for small devices */
+#intro {
+    height: 95vh;
 }
