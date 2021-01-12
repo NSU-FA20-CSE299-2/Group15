@@ -1,16 +1,20 @@
 body{
-    background-color: bisque;
+    background-color: rgb(0, 0, 0);
 }
 
 div{
-    background-color: blueviolet;
+    background-color: rgb(226, 43, 43);
     border-color: yellow;
     border-width: 4px;
     border-style: dotted;
+    margin-right: 30%;
+    margin-left: 30%;
+    text-align: center;
 }
 
 p{
-    color: yellowgreen;
+    color: rgb(44, 114, 180);
+    margin-left: auto;
 }
 
 span{
