@@ -6,7 +6,10 @@
                 {% for channel in channels %}
                 <button type="button" class="btn tv-buttons btn-outline-light m-1" onclick="playchannel('{{channel.link}}');"
                         data-toggle="tooltip" data-placement="bottom" title="{{channel.name}}">
-                        <a><img src="{% static 'images/live-sport.png' %}" height='50px' width='99px' /></a></button>
+                        
+                        <p class="h6 bg-text">
+                            {{channel.name}}
+                        </p></button>
                 {% endfor %}
             </div>
         </div>
