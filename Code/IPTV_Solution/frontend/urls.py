@@ -3,6 +3,6 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.home),
-    path("iptv/", views.iptv),
+    path('', views.home, name="home"),
+    path("iptv/", views.iptv, name="iptv"),
 ]
