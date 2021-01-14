@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.forms import inlineformset_factory
 from django.contrib.auth.forms import UserCreationForm
@@ -21,6 +21,12 @@ def registerPage(request):
 
     context = {'form': form}
     return render(request, 'register.html', context)
+
+
+def loginPage(request):
+
+    context = {}
+    return render(request, 'login.html', context)
 
 def iptv(request):
     # getting all channels from database
