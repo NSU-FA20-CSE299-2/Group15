@@ -1,18 +1,21 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import *
 from django.forms import inlineformset_factory
 from django.contrib.auth.forms import UserCreationForm
+
+
+from .models import *
+from .forms import CreateUserForm
 
 
 def home(request):
     return render(request, 'home.html')
 
 def registerPage(request):
-    form = UserCreationForm()
+    form = CreateUserForm()
     
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = CreateUserForm(request.POST)
         if form.is_valid():
             form.save()
 
