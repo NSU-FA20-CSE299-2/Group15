@@ -6,6 +6,10 @@ from .models import *
 def home(request):
     return render(request, 'home.html')
 
+def registerPage(request):
+    context = {}
+    return render(request, 'register.html', context)
+
 def iptv(request):
     # getting all channels from database
     channels = Channel.objects.all()
