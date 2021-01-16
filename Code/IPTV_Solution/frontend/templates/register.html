@@ -103,8 +103,11 @@
                                     <i class="fab fa-github"></i>
                                 </button>                                
                             </div>
+                            
+                            {{form.errors}}
+
                             <div class="text-center">
-                                <p class="pt-3">Already have an account? <a href="{% url 'login' %}">Login</a></p>
+                                <p class="pt-4">Already have an account? <a href="{% url 'login' %}">Login</a></p>
                             </div>
                         </form>
                     </section>
@@ -116,13 +119,11 @@
 
 
 <script>
-    var form_fields = document.getElementsByTagName('input')
-
+    var form_fields = document.getElementsByTagName('input');
     for (var field in form_fields){	
 			form_fields[field].className += ' form-control'
-		}
+        }
 </script>
-
 {% endblock content %}
 
 <form method="POST" action="">
