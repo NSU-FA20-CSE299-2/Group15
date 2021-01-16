@@ -15,12 +15,12 @@
             <div class="pt-5">
                 <h1 class="text-center">Login</h1>
                 <section class="border p-4 d-flex justify-content-center mb-4 form-container">
-                    <form style="width: 22rem">
+                    <form method="POST" action="" style="width: 22rem">
+                        {% csrf_token %}
                         <!-- Email input -->
                         <div class="form-outline mb-4 mt-4">
-                            <input type="email" id="form2Example1" class="form-control" autofocus>
-                            <label class="form-label" for="form2Example1" style="margin-left: 0px;">Email
-                                address</label>
+                            <input type="text" id="username" name="username" class="form-control" autofocus>
+                            <label class="form-label" for="username" style="margin-left: 0px;">Username</label>
                             <div class="form-notch">
                                 <div class="form-notch-leading" style="width: 9px;"></div>
                                 <div class="form-notch-middle" style="width: 88.8px;"></div>
@@ -30,8 +30,8 @@
 
                         <!-- Password input -->
                         <div class="form-outline mb-4">
-                            <input type="password" id="form2Example2" class="form-control">
-                            <label class="form-label" for="form2Example2" style="margin-left: 0px;">Password</label>
+                            <input type="password" name="password" id="password" class="form-control">
+                            <label class="form-label" for="password" style="margin-left: 0px;">Password</label>
                             <div class="form-notch">
                                 <div class="form-notch-leading" style="width: 9px;"></div>
                                 <div class="form-notch-middle" style="width: 64.8px;"></div>
@@ -57,7 +57,7 @@
                         </div>
 
                         <!-- Submit button -->
-                        <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+                        <button type="submit" value="Login" class="btn btn-primary btn-block mb-4">Log in</button>
 
                         <!-- Register buttons -->
                         <div class="text-center">
@@ -78,6 +78,11 @@
                             <button type="button" class="btn btn-primary btn-floating mx-1">
                                 <i class="fab fa-github"></i>
                             </button>
+                        </div>
+                        <div class="text-center">
+                            {% for message in messages%}
+                            <p id='messages'>{{message}}</p>
+                            {% endfor %}
                         </div>
                     </form>
                 </section>
