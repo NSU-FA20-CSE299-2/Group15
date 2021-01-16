@@ -31,3 +31,9 @@ body {
 footer {
     background-color:#BDBDBD;
 }
+
+.helle-message {
+    font-size: 18px;
+    color: lightgray;
+    margin-right: 20px;
+}
