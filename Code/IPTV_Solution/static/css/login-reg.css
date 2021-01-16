@@ -1,15 +1,19 @@
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%; 
-}
+
 
 .form-container {
     top: 20vh;
     border-radius: 10px;
 }
 
-section {
-    width: 30rem;
+/* section {
+    width: 35rem;
     justify-content: center;
+} */
+
+@media only screen and (min-height: 900px) {
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%; 
+    }
 }
