@@ -12,15 +12,10 @@
             <h1 class="text-center">Live Online TV Streaming</h1>
         </div>
     </div>
-</div>
-
-<div class="container d-flex justify-content-center">
-
-
-    <div class="row">
-        <div class="col">
-            <video-js id="iptv_player" class="vjs-default-skin vjs-big-play-centered" controls preload="auto" width="960" height="540">
-                <source src="http://192.168.25.2:8085/hls/sonyten2.m3u8" type="application/x-mpegURL">
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+            <video-js id="iptv_player" class="vjs-default-skin vjs-big-play-centered" controls preload="auto">
+                    <source src="http://192.168.25.2:8085/hls/sonyten2.m3u8" type="application/x-mpegURL">
             </video-js>
         </div>
     </div>
@@ -29,7 +24,9 @@
 {% include 'channels.html' %}
 
 <script>
-    var player = videojs('iptv_player');
+    var player = videojs('iptv_player', {
+        fluid: true
+    });
     function playchannel(clink) {
         player.src(clink);
         player.play();
