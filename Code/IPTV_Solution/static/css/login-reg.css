@@ -1,0 +1,15 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+}
+
+.form-container {
+    top: 20vh;
+    border-radius: 10px;
+}
+
+section {
+    width: 30rem;
+    justify-content: center;
+}
