@@ -7,6 +7,8 @@ from django.contrib import messages
 
 from django.contrib.auth import authenticate, login, logout
 
+from django.contrib.auth.decorators import login_required
+
 from .models import *
 from .forms import CreateUserForm
 
@@ -51,6 +53,8 @@ def logoutUser(request):
     logout(request)
     return redirect('login')
 
+
+@login_required(login_url='login')
 def iptv(request):
     # getting all channels from database
     channels = Channel.objects.all()
