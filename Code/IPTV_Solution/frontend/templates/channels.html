@@ -1,17 +1,15 @@
 {% load static %}
 <div class="container">
     <div class="row m-3">
-        <div class="col-12">
-            <div id="channels" class="text-center">
+        <div class="col-12 buttons">
+            <div id="channels" class="text-center buttons">
                 {% for channel in channels %}
-                <button type="button" class="btn tv-buttons btn-outline-light m-1" onclick="playchannel('{{channel.link}}');"
-                        data-toggle="tooltip" data-placement="bottom" title="{{channel.name}}">
-                        
-                        <p class="h6 bg-text">
-                            {{channel.name}}
-                        </p></button>
+                    <button class="btn-ts1 effect04 m-2" data-sm-link-text="Country: {{channel.country.name}}"
+                    onclick="playchannel('{{channel.link}}');"><span>{{channel.name}}</span></button>
                 {% endfor %}
             </div>
         </div>
     </div>
 </div>
+
+<link rel="stylesheet" href="{% static 'css/buttons.css' %}">
