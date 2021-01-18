@@ -1,0 +1,58 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block player_scripts %}
+<link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
+<script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+{% endblock player_scripts %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center mt-2">Stream Movies</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+            <video-js id="iptv_player" class="vjs-default-skin vjs-big-play-centered" controls preload="auto">
+                    <source src="http://furiousnet.net/ftp/Animated%20Movies/Bambi%20%281942%29/Bambi.1942.720p.BRrip.mp4">
+            </video-js>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row m-3">
+        <div class="col-12 buttons">
+            <div id="channels" class="text-center buttons">                
+                    <button class="btn-ts1 effect04 m-2" data-sm-link-text="Play"
+                    onclick="playchannel('http://furiousnet.net/ftp/Animated%20Movies/Bambi%20%281942%29/Bambi.1942.720p.BRrip.mp4');"><span>Bambi</span></button>
+
+                    <button class="btn-ts1 effect04 m-2" data-sm-link-text="Play"
+                    onclick="playchannel('http://furiousnet.net/ftp/Animated%20Movies/A%20Bug%27s%20Life%20%281998%29/A%20Bug%27s%20Life%201998%20BluRay%20720p%20nHD%20x264-NhaNc3.mp4');"><span>A Bug's Life</span></button>
+
+                    <button class="btn-ts1 effect04 m-2" data-sm-link-text="Play"
+                    onclick="playchannel('http://furiousnet.net/ftp/Animated%20Movies/Kung%20Fu%20Panda%202/Kung%20Fu%20Panda%202%202011.mp4');"><span>Kung Fu Panda 2</span></button>
+
+                    <button class="btn-ts1 effect04 m-2" data-sm-link-text="Play"
+                    onclick="playchannel('http://furiousnet.net/ftp/Animated%20Movies/Brave%202012/Brave.mp4');"><span>Brave</span></button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="{% static 'css/buttons.css' %}">
+
+<script>
+    var player = videojs('iptv_player', {
+        fluid: true
+    });
+    function playchannel(clink) {
+        player.src(clink);
+        player.play();
+    }
+</script>
+
+{% endblock content %}

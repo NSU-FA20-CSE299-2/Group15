@@ -67,3 +67,11 @@ def iptv(request):
     # rendering the site
     return render(request, 'iptv.html', context)
     
+@login_required(login_url='login')
+def vod(request):
+    # getting all channels from database
+    channels = Channel.objects.all()
+    context = {'channels': channels}
+
+    # rendering the site
+    return render(request, 'vod.html', context)
