@@ -76,13 +76,30 @@ Also we used Django contrib auth decorator for login requirement or restricting 
 ### Landing Page
 When users visil our site, the landing page or home page will be this:
 <p align="center">
-  <img width="700" height="400" src="Documentation/images/landingPage.jpg"><br>
+  <img width="700" src="Documentation/images/landingPage.jpg"><br>
   Landing Page
 </p>
 
 ### Live TV Streaming
 In this section users will be able to watch the streams that we provide. And this streams will be added in the database by the admins of the service.
 <p align="center">
-  <img width="700" height="400" src="Documentation/images/liveTV.jpg"><br>
-  Landing Page
+  <img width="700" src="Documentation/images/liveTV.jpg"><br>
+  Live stream
+</p>
+
+### Login Page
+Login page will authenticate users and if anyone tries to watch tv or movies they are automatically redirected to login page.
+<p align="center">
+  <img width="700" src="Documentation/images/loginPage.jpg"><br>
+  Login Page
+</p>
+
+### Registration Page
+If users don't have any account they can register. They are required to provide their email, a unique username and strong password such as:
+- minimum 8 characters 
+- upper case lower case mixed
+- using special character etc
+<p align="center">
+  <img width="700" src="Documentation/images/registerPage.jpg"><br>
+  Registration Page
 </p>
