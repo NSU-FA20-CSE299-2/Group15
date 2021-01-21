@@ -103,3 +103,6 @@ If users don't have any account they can register. They are required to provide 
   <img width="700" src="Documentation/images/registerPage.jpg"><br>
   Registration Page
 </p>
+
+## Conclusion
+We wanted to develop a site which would provide the user a great experience of watching live TV from anywhere from any device and we are mostly accoplished what we wanted to develop. There are still rooms for good improvements. If we get more time, we will be able to make the platform more robust and enjoyable for the users. For now it's in a state that users can enjoy seamless broadcast what we give them to watch. In this project we learned [django](https://www.djangoproject.com/) and make the site as DRY(don't repeat yourself) as possible. Also learned how to map database using models and applied that in our project. It was fun and time consuming learing the processes and developing the platform. But the whole process, developing the project was quite an experience for us.
