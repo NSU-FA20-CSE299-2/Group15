@@ -18,13 +18,13 @@
 <p align="center"><strong>ID</strong><strong>:&nbsp; </strong>1431174042</p>
 <p align="center"><strong>Email</strong><strong>:</strong> <a href="nabobi.khan@northsouth.ed">nabobi.khan@northsouth.edu</a></p>
 <p align="center"><strong>Git Repository</strong><strong>: </strong><a href="https://github.com/NSU-FA20-CSE299-2/Group15/">https://github.com/NSU-FA20-CSE299-2/Group15/</a></p>
-<p align="center"><strong>Date Prepared</strong><strong>: </strong>11/16/2020</p>
+<p align="center"><strong>Date Prepared</strong><strong>: </strong>1/21/2021</p>
 <p><strong>&nbsp;</strong></p>
 <p><strong>&nbsp;</strong></p>
 
 # Project Report
 
-IPTV:
+## Abstract
 We started our project, IPTV server with a purpose of offering better and easy to access tv streaming site, where we all can watch tv and enjoy ourselves! Through out the semester, we faced some difficulties completing the project.
 
 ## Progress
@@ -71,3 +71,18 @@ As we are operating this project on small scale, so we used SQLite. When we will
 We didn't use Allauth. We used Django Contrib Authentication module for Login and Logout.
 For regsitration we used Django contrib auth forms.
 Also we used Django contrib auth decorator for login requirement or restricting access to all anonymous users
+
+## User Interface
+### Landing Page
+When users visil our site, the landing page or home page will be this:
+<p align="center">
+  <img width="700" height="400" src="Documentation/images/landingPage.jpg"><br>
+  Landing Page
+</p>
+
+### Live TV Streaming
+In this section users will be able to watch the streams that we provide. And this streams will be added in the database by the admins of the service.
+<p align="center">
+  <img width="700" height="400" src="Documentation/images/liveTV.jpg"><br>
+  Landing Page
+</p>
